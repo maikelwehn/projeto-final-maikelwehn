@@ -44,7 +44,7 @@
             }
             
             p{ 
-                color: rgb(12, 90, 12);
+                color: rgb(17, 153, 17);
                 font-family: monospace;
                 font-size: 18px;
                 padding-right: 5px;
@@ -408,14 +408,14 @@
             const textoArray = elemento.innerHTML.split('');
             elemento.innerHTML = '';
             textoArray.forEach((letra, i) => {
-                setTimeout(() => elemento.innerHTML += letra, 70 * i);
+                setTimeout(() => elemento.innerHTML += letra, 50 * i);
             });
         }
 
         setTimeout(function () {
             const titulo = document.querySelector('p');
             typeWriter(titulo);
-        }, 500);
+        }, 250);
 
         function exibirTextoDiv1() {
     var infoText = document.querySelector('#div1 .info-text1');
